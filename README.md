@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ঘুরি (Ghuri) - ঐতিহ্যবাহী কাঠের ঘানি সরিষার তেল ই-কমার্স
 
-## Getting Started
+একটি আধুনিক, হাই-কনভার্টিং ও নান্দনিক নেক্সট.জেএস (Next.js) ই-কমার্স ওয়েব প্ল্যাটফর্ম — ঐতিহ্যবাহী কাঠের ঘানিতে ভাঙানো ১০০% নির্ভেজাল কোল্ড-প্রেসড সরিষার তেলের জন্য প্রস্তুতকৃত।
 
-First, run the development server:
+![Ghuri Storefront Preview](/public/images/design-mockup.png)
 
+---
+
+## 🌿 প্রজেক্টের বৈশিষ্ট্য (Key Features)
+
+- **আর্টিসানাল ও লাক্সারি ডিজাইন (Editorial Aesthetic):** উষ্ণ আইভোরি ব্যাকগ্রাউন্ড (`#FBF8EF`), ফরেস্ট গ্রিন (`#185C38`) এবং মাস্টার্ড গোল্ড (`#D9A526`) প্যালেটে সুসজ্জিত স্টোরফ্রন্ট।
+- **দ্বি-ভাষিক টাইপোগ্রাফি (Bi-Script Typography):** বাংলা শিরোনামের জন্য Google Fonts এর **Anek Bangla** এবং আধুনিক জ্যামিতিক ফন্ট **Inter** ও **Cinzel** এর নিখুঁত সংমিশ্রণ।
+- **ইন্টারঅ্যাক্টিভ প্যাকেজ সিলেক্টর (Tier Selector):** 
+  - ১ লিটার (কাচের বোতল) - ৳৩৫০ (+ ৮০৳ ডেলিভারি)
+  - ২ লিটার - ৳৭০০ (+ ৮০৳ ডেলিভারি)
+  - ৩ লিটার - ৳১,০৫০ (+ ৮০৳ ডেলিভারি)
+  - ৫ লিটার (সর্বাধিক বিক্রিত ফ্যামিলি প্যাক) - ৳১,৭৫০ (ফ্রি ডেলিভারি)
+  - ১০ লিটার ফুড-গ্রেড ক্যান - ৳৩,৫০০ (ফ্রি ডেলিভারি)
+- **লাইভ প্রাইসিং ও বাংলা সংখ্যা রূপান্তর:** রিয়েল-টাইম বাংলা সংখ্যা ও কারেন্সি ফরম্যাটিং (`৳১,৭৫০`), ডায়নামিক ডেলিভারি ফি ক্যালকুলেশন।
+- **২-ধাপের ক্যাশ অন ডেলিভারি চেকআউট (Instant COD Checkout):**
+  - পূর্ণ নাম, ১১-ডিজিটের ভ্যালিড ফোন নম্বর
+  - বিভাগ ও জেলা/থানা নির্বাচন
+  - কনফেটি অ্যানিমেশন ও অর্ডার সাবমিশন
+- **অর্ডার কনফার্মেশন রসিদ ও হোয়াটসঅ্যাপ ইন্টিগ্রেশন:**
+  - প্রতিটি অর্ডারে ইউনিক ট্র্যাকিং আইডি (যেমন `GHURI-82914`)
+  - সরাসরি হোয়াটসঅ্যাপে এক ক্লিকে বিস্তারিত অর্ডার মেসেজ পাঠানোর সুবিধা
+- **মোবাইল অপ্টিমাইজড স্টিকি বার:** মোবাইল স্ক্রিনে নিচের দিকে পিন করা স্টিকি বাই-বার যা নির্বাচিত প্যাকেজ এবং মূল্যের সাথে স্বয়ংক্রিয়ভাবে সিঙ্ক হয়।
+- **স্বচ্ছ উৎপাদন প্রক্রিয়া ও সোশ্যাল প্রুফ:** ৪-ধাপের কারিগরি উৎপাদন প্রদর্শনী, ভেরিফায়েড কাস্টমার রিভিউ ও ৬টি বিস্তারিত এফএকিউ (FAQ Accordion)।
+
+---
+
+## 🛠️ ব্যবহৃত প্রযুক্তি (Tech Stack)
+
+- **ফ্রেমওয়ার্ক:** [Next.js](https://nextjs.org/) (App Router, Turbopack, TypeScript)
+- **স্টাইলিং:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **আইকন:** [Lucide React](https://lucide.dev/) & [Google Material Symbols](https://fonts.google.com/icons)
+- **অ্যানিমেশন ও ইউটিলিটি:** `canvas-confetti`
+
+---
+
+## 🚀 লোকাল সেটআপ ও রান করার নিয়ম (Getting Started)
+
+১. রিপোজিটরি ক্লোন করুন:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/mohaiminulkabir/Ghuri-E-commerce.git
+cd Ghuri-E-commerce
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+২. ডিপেন্ডেন্সি ইন্সটল করুন:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+৩. ডেভেলপমেন্ট সার্ভার চালু করুন:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ব্রাউজারে [http://localhost:3000](http://localhost:3000) ওপেন করে ওয়েবসাইটটি দেখুন।
 
-## Learn More
+৪. প্রোডাকশন বিল্ড তৈরি করতে:
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 ফোল্ডার স্ট্রাকচার (Folder Structure)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+├── app/
+│   ├── globals.css          # Tailwind CSS v4 থিম ও ভেরিয়েবল
+│   ├── layout.tsx           # মেটাডেটা, Google Fonts কনফিগারেশন
+│   └── page.tsx             # মূল ল্যান্ডিং ও চেকআউট পেজ
+├── components/
+│   ├── AnnouncementBar.tsx  # টপ এনাউন্সমেন্ট বার
+│   ├── Header.tsx           # স্টিকি হেডার ও নেভিগেশন
+│   ├── HeroSection.tsx      # হিরো সেকশন ও ট্রাস্ট ব্যাজ
+│   ├── ProductShowcase.tsx  # প্রোডাক্ট প্রেজেন্টেশন ও বৈশিষ্ট্য
+│   ├── CheckoutSection.tsx  # লাইভ টায়ার সিলেক্টর ও অর্ডার ফর্ম
+│   ├── OrderSuccessModal.tsx# অর্ডার নিশ্চিতকরণ রসিদ ও হোয়াটসঅ্যাপ
+│   ├── ProductionProcess.tsx# ৪-ধাপের উৎপাদন পদ্ধতি
+│   ├── CinematicStory.tsx   # ঐতিহ্য ও গল্পের ব্যানার
+│   ├── ReviewsSection.tsx   # গ্রাহক রিভিউ ও ফিডব্যাক
+│   ├── FaqSection.tsx       # সাধারণ প্রশ্নাবলী (Accordion)
+│   ├── FinalCtaSection.tsx  # ফাইনাল কল-টু-অ্যাকশন
+│   ├── Footer.tsx           # ফুটার, পলিসি ও যোগাযোগ
+│   ├── StickyMobileBuyBar.tsx # মোবাইল স্টিকি বাই বার
+│   └── FloatingWhatsApp.tsx # ফ্লোটিং হোয়াটসঅ্যাপ বাটন
+├── lib/
+│   └── data.ts              # ডেটা মডেল, বাংলা সংখ্যা ও প্রোডাক্ট ডেটা
+└── public/
+    └── images/              # স্থানীয় অপ্টিমাইজড ছবি ও অ্যাসেট
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 লাইসেন্স
+MIT License. সর্বস্বত্ব সংরক্ষিত © ২০২৬ ঘুরি ঘানি খাঁটি তেল।
